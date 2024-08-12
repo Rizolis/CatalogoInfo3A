@@ -13,7 +13,11 @@ export default function Home() {
   return (
     <div>
          <h1>Livros de Programação</h1>
+    { 
+    listaProdutos.map((produto)=>
+      <div key={produto.id}>
+      <p>{produto.nome}</p>
+      <p>{produto.preco}</p>
     </div>
-   
-  );
-}
+    )
+  }
