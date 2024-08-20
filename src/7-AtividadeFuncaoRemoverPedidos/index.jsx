@@ -11,9 +11,9 @@ import { useState } from "react";
 
 export default function Home() {
   const [listaProdutos, setProdutos] = useState([
-    { id: 1, nome: 'Produto A', preco: 'R$ 18,00' },
-    { id: 2, nome: 'Produto B', preco: 'R$ 30,00' },
-    { id: 3, nome: 'Produto C', preco: 'R$ 65,00' }
+    { id: 1, nome: 'Pamonha Verde', preco: 'R$ 18,00' },
+    { id: 2, nome: 'Cachorro Quente', preco: 'R$ 30,00' },
+    { id: 3, nome: 'Milho Verde', preco: 'R$ 65,00' }
   ]);
 
   const [listaPedidos, setListaPedidos] = useState([]);
@@ -39,7 +39,6 @@ export default function Home() {
 
   return (
     <div>
-         <h1>Vendas de Produtos</h1>
 
    {
      listaProdutos.map((produto)=>
