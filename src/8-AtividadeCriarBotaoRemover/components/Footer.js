@@ -1,11 +1,7 @@
-import React from 'react';
-export default Footer;
-
-const Footer = ({ desenvolvedor }) => 
-{
-  return (
-  <footer>
-<p>Desenvolvido por {Neymar}</p>
-</footer>
-)
+export default function Footer ({desenvolvedor}){
+    return(
+        <footer>
+            <p>desenvolvedor - {desenvolvedor}</p>
+        </footer>
+    )
 }
